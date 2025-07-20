@@ -62,3 +62,28 @@ nav a:hover {
     margin: auto;
     text-align: center;
 }
+.logo-container img {
+    max-width: 60%;
+    height: auto;
+    opacity: 0.9;
+    filter: drop-shadow(0 0 15px rgba(0, 255, 255, 0.25));
+    transition: all 0.3s ease;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+    .logo-container img {
+        max-width: 80%;
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+    .logo-container {
+        height: 50vh; /* Reduce height on mobile */
+    }
+
+    .logo-container img {
+        max-width: 90%;
+    }
+}
