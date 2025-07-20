@@ -62,11 +62,24 @@ nav a:hover {
     margin: auto;
     text-align: center;
 }
+.logo-container {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo-container img {
     max-width: 60%;
     height: auto;
     opacity: 0.9;
-    filter: drop-shadow(0 0 15px rgba(0, 255, 255, 0.25));
+    filter:
+        brightness(0)
+        saturate(100%)
+        sepia(1)
+        hue-rotate(160deg)
+        drop-shadow(0 0 15px rgba(0, 255, 255, 0.25));
     transition: all 0.3s ease;
 }
 
@@ -80,10 +93,11 @@ nav a:hover {
 /* Small screens (phones) */
 @media (max-width: 480px) {
     .logo-container {
-        height: 50vh; /* Reduce height on mobile */
+        height: 50vh;
     }
 
     .logo-container img {
         max-width: 90%;
     }
 }
+
