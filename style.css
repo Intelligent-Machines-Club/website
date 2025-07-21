@@ -69,7 +69,7 @@ nav a:hover {
 }
 
 .logo-content img {
-    max-width: 50%;
+    max-width: 70%;   /* Increased from 50% to 70% */
     height: auto;
     opacity: 0.9;
     filter:
@@ -94,7 +94,7 @@ nav a:hover {
 /* Responsive adjustments for logo & tagline */
 @media (max-width: 768px) {
     .logo-content img {
-        max-width: 70%;
+        max-width: 80%;
     }
 
     .tagline {
