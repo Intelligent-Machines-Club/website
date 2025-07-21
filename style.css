@@ -114,6 +114,7 @@ nav a:hover {
 }
 
 .logos-row img {
+    max-height: 90%;
     height: 250px;
     width: auto;
     max-width: 300px;
