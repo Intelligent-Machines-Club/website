@@ -102,7 +102,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 10px;
+    padding: 40px 10px;
     flex-shrink: 0;
 }
 
