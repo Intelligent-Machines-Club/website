@@ -14,7 +14,6 @@ body {
     animation: gradientShift 15s ease infinite;
 }
 
-/* Background animation */
 @keyframes gradientShift {
     0% {background-position: 0% 50%;}
     50% {background-position: 100% 50%;}
@@ -51,7 +50,7 @@ nav a:hover {
 
 
 /* ========================
-    TOP SECTION: MAIN LOGO
+    TOP SECTION: MAIN LOGO + TAGLINE
 ======================== */
 
 .logo-container {
@@ -62,24 +61,14 @@ nav a:hover {
     padding-top: 60px;
 }
 
-/* ========================
-    TAGLINE UNDER LOGO
-======================== */
-
 .logo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
-.tagline {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.5rem;
-    color: black;
-    margin-top: 20px;
-    font-weight: 500;
-}
-
-
-.logo-container img {
+.logo-content img {
     max-width: 50%;
     height: auto;
     opacity: 0.9;
@@ -92,15 +81,34 @@ nav a:hover {
     transition: all 0.3s ease;
 }
 
+.tagline {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7rem;
+    color: black;
+    margin-top: 20px;
+    font-weight: 600;
+    max-width: 90%;
+}
+
+
+/* Responsive adjustments for logo & tagline */
 @media (max-width: 768px) {
-    .logo-container img {
+    .logo-content img {
         max-width: 70%;
+    }
+
+    .tagline {
+        font-size: 1.3rem;
     }
 }
 
 @media (max-width: 480px) {
-    .logo-container img {
+    .logo-content img {
         max-width: 90%;
+    }
+
+    .tagline {
+        font-size: 1.1rem;
     }
 }
 
@@ -110,7 +118,7 @@ nav a:hover {
 ======================== */
 
 .glass-section {
-    height: 30vh;  /* Fixed height for the glass section */
+    height: 30vh;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -132,9 +140,8 @@ nav a:hover {
 
 .logos-row img {
     max-height: 90%;
-    height: 250px;
+    max-width: 250px;
     width: auto;
-    max-width: 300px;
     object-fit: contain;
     display: block;
     transition: transform 0.3s ease;
@@ -143,6 +150,7 @@ nav a:hover {
 .logos-row img:hover {
     transform: scale(1.1);
 }
+
 
 /* Responsive scaling of footer logos */
 @media (max-width: 768px) {
@@ -153,7 +161,6 @@ nav a:hover {
     }
 
     .logos-row img {
-        height: 70px;
         max-width: 100px;
     }
 }
