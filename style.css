@@ -54,113 +54,11 @@ nav a:hover {
 ======================== */
 
 .logo-container {
-    flex: 1;
+    height: 70vh;  /* Makes logo area occupy 70% of viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 60px;
 }
 
-.logo-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.logo-content img {
-    max-width: 70%;   /* Increased from 50% to 70% */
-    height: auto;
-    opacity: 0.9;
-    filter:
-        brightness(0)
-        saturate(100%)
-        sepia(1)
-        hue-rotate(160deg)
-        drop-shadow(0 0 15px rgba(0, 255, 255, 0.25));
-    transition: all 0.3s ease;
-}
-
-.tagline {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.7rem;
-    color: black;
-    margin-top: 20px;
-    font-weight: 600;
-    max-width: 90%;
-}
-
-
-/* Responsive adjustments for logo & tagline */
-@media (max-width: 768px) {
-    .logo-content img {
-        max-width: 80%;
-    }
-
-    .tagline {
-        font-size: 1.3rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo-content img {
-        max-width: 90%;
-    }
-
-    .tagline {
-        font-size: 1.1rem;
-    }
-}
-
-
-/* ========================
-    BOTTOM SECTION: GLASS FOOTER
-======================== */
-
-.glass-section {
-    height: 30vh;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.logos-row {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 90%;
-    max-width: 1200px;
-    gap: 30px;
-}
-
-.logos-row img {
-    max-height: 90%;
-    max-width: 250px;
-    width: auto;
-    object-fit: contain;
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.logos-row img:hover {
-    transform: scale(1.1);
-}
-
-
-/* Responsive scaling of footer logos */
-@media (max-width: 768px) {
-    .logos-row {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .logos-row img {
-        max-width: 100px;
-    }
-}
+.logo-con
