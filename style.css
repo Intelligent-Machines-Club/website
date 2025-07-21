@@ -116,15 +116,18 @@ nav a:hover {
 }
 
 .logos-row img {
-    max-height: 60px;
-    max-width: 100px;
-    object-fit: contain;
+    height: 60px;           /* Uniform height */
+    width: auto;            /* Maintain proportions */
+    max-width: 100px;       /* Prevent too wide logos */
+    object-fit: contain;    /* Ensure logos aren’t distorted */
+    display: block;
     transition: transform 0.3s ease;
 }
 
 .logos-row img:hover {
     transform: scale(1.1);
 }
+
 
 /* Responsive behavior for footer logos */
 @media (max-width: 768px) {
@@ -135,7 +138,7 @@ nav a:hover {
     }
 
     .logos-row img {
-        max-height: 40px;
+        height: 40px;
         max-width: 80px;
     }
 }
